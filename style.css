@@ -13,6 +13,7 @@ body {
   position: relative;
   display: flex;
   flex: 0 1 auto;
+  
 }
 #logo {
   filter: brightness(0) invert(1);
@@ -46,7 +47,6 @@ body {
 }
 #hero h2 {
   font-style: italic;
-
 }
 
 #myForm {
@@ -55,7 +55,6 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  
 }
 .formRow {
   display: flex;
@@ -102,6 +101,10 @@ button:hover {
 button:focus {
   background-color: chocolate;
 }
-a:hover {
+
+a {
   color: chocolate;
+}
+a:hover {
+  color: brown;
 }
