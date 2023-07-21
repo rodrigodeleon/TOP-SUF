@@ -14,19 +14,71 @@
 
     <div id="right">
       <div id="hero">
-        <h1>Welcome to the most incredible list of all, The Awesome List!</h1>
-        <h2>
-          Fill your info and you'll get all the exclusive content before anyone
-          else.
-        </h2>
+        <h2>Welcome to the most incredible list of all, The Awesome List!</h2>
+        <h3>Fill your info down below and become a member.</h3>
       </div>
       <form action="" id="myForm" method="set">
-        <fieldset id="formLeft">
-          <legend>Personal Info:</legend>
-        </fieldset>
-        <fieldset id="formRight">
-          <legend>Contact Details:</legend>
-        </fieldset>
+        <div class="formRow">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstName">First Name: </label>
+            <input
+              name="firstName"
+              type="text"
+              required
+              placeholder="Ex: Rodrigo"
+            />
+            <label for="lastName">Last Name: </label>
+            <input
+              name="lastName"
+              type="text"
+              required
+              placeholder="Ex: de Leon"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Contact Details</legend>
+            <label for="email">Email: </label>
+            <input
+              name="email"
+              type="email"
+              required
+              placeholder="Ex: name@domain.com"
+            />
+            <label for="tel">Telephone Number: </label>
+            <input
+              name="tel"
+              type="tel"
+              required
+              minlength="10"
+              maxlength="10"
+              placeholder="Ex: 09899999"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Create Password</legend>
+            <label for="password">Insert New Password: </label>
+            <input
+              name="password"
+              type="password"
+              required
+              minlength="8"
+              placeholder="********"
+            />
+            <label for="repeatPassword">Repeat Password: </label>
+            <input
+              name="repeatPassword"
+              type="password"
+              required
+              minlength="8"
+              placeholder="********"
+            />
+          </fieldset>
+        </div>
+        <div class="formRow">
+          <button>Become a Member</button>
+          <p>Already a Member? <a href="#"> Login Here</a></p>
+        </div>
       </form>
     </div>
   </body>
